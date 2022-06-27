@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Manhattan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="coffeImage" translatesAutoresizingMaskIntoConstraints="NO" id="KPA-ld-hPR">
+                                <rect key="frame" x="40" y="114" width="323" height="328"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="328" id="6zC-en-yLf"/>
+                                    <constraint firstAttribute="width" constant="323" id="aHL-vg-viW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="coffeName" text="" textAlignment="center" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAh-t2-DDh">
+                                <rect key="frame" x="119" y="515" width="165" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btnRandomCoffe" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEg-SU-HuP">
+                                <rect key="frame" x="129" y="652" width="144" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="32q-kA-BUe"/>
+                                    <constraint firstAttribute="width" constant="144" id="C8H-4m-U69"/>
+                                </constraints>
+                                <color key="tintColor" red="0.92549019610000005" green="0.76862745099999996" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Random Coffe">
+                                    <color key="baseBackgroundColor" red="0.28609674150101017" green="0.1480981721322496" blue="0.059960891409884032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnRandomCoffe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sGF-d9-JMO"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="lXr-Lz-Es1">
+                                <rect key="frame" x="183" y="260" width="37" height="37"/>
+                                <color key="color" red="0.29055539050000001" green="0.1504061948" blue="0.060895346539999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lXr-Lz-Es1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="183" id="8vg-r4-hIx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZEg-SU-HuP" secondAttribute="bottom" constant="179" id="9sg-pr-rDK"/>
+                            <constraint firstItem="yAh-t2-DDh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="119" id="Bc0-pG-QeO"/>
+                            <constraint firstItem="KPA-ld-hPR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="FIV-Tn-hbD"/>
+                            <constraint firstItem="yAh-t2-DDh" firstAttribute="top" secondItem="KPA-ld-hPR" secondAttribute="bottom" constant="73" id="Fs6-ZR-nA4"/>
+                            <constraint firstItem="lXr-Lz-Es1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="216" id="JDk-Az-4yE"/>
+                            <constraint firstAttribute="trailing" secondItem="yAh-t2-DDh" secondAttribute="trailing" constant="130" id="KPg-Cb-cue"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lXr-Lz-Es1" secondAttribute="trailing" constant="194" id="Q9e-Bk-G1H"/>
+                            <constraint firstItem="ZEg-SU-HuP" firstAttribute="top" secondItem="yAh-t2-DDh" secondAttribute="bottom" constant="137" id="Rmh-PA-nQC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KPA-ld-hPR" secondAttribute="trailing" constant="51" id="ba5-S3-HvK"/>
+                            <constraint firstItem="ZEg-SU-HuP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="fD8-eC-oz0"/>
+                            <constraint firstItem="yAh-t2-DDh" firstAttribute="top" secondItem="KPA-ld-hPR" secondAttribute="bottom" constant="73" id="lSE-xy-dhe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZEg-SU-HuP" secondAttribute="trailing" constant="141" id="nT0-eX-llx"/>
+                            <constraint firstItem="yAh-t2-DDh" firstAttribute="top" secondItem="lXr-Lz-Es1" secondAttribute="bottom" constant="218" id="ovS-VR-haE"/>
+                            <constraint firstItem="KPA-ld-hPR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="wtW-jg-ncj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coffeImage" destination="KPA-ld-hPR" id="qUn-7d-TOn"/>
+                        <outlet property="coffeName" destination="yAh-t2-DDh" id="PT7-56-MOr"/>
+                        <outlet property="loadingIndicator" destination="lXr-Lz-Es1" id="c8O-hu-EhE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
